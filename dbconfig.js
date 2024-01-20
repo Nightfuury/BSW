@@ -8,11 +8,11 @@ var mysql = require('mysql');
 // });
 
 var db=mysql.createConnection({
-    host : "database-bsw.cufs3q03c2kq.ap-south-1.rds.amazonaws.com",
+    host : "db-bsw.cufs3q03c2kq.ap-south-1.rds.amazonaws.com",
     user : "admin",
-    password : "0SfjhwysN8mteoxLnHK6",
+    password : "KfPO9K0OsE6HZJOaiQAR",
     port : "3306",
-    database:"-"
+    database:"bswmysql"
 })
 
 
