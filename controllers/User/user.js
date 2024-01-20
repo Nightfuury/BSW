@@ -1,6 +1,9 @@
 var db = require('../../dbconfig');
 
 const createTable = (req, res) => {
+
+    db.query('CREATE DATABASE IF NOT EXISTS MYSQL;');
+    db.query('USE MYSQL;');
     let sql = "CREATE TABLE User(Uid VARCHAR(255), Name VARCHAR(50), Score INT,Country VARCHAR(3),Timestamp Date, PRIMARY KEY(Uid))";
 
     db.query(sql, (err) => {
